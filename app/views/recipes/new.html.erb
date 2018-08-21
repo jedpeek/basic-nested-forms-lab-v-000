@@ -8,16 +8,10 @@
   <%= f.fields_for :ingredients do |i| %>
 
     <%= i.label :name %>
-    <%= i.text_field :ingredient%><br>
+    <%= i.text_field :name %><br>
 
-    <%= i.label :quantity_1 %>
-    <%= i.text_field :quantity_1 %><br>
-
-    <%= i.label :ingredient_name_2 %>
-    <%= i.text_field :ingredient_name_2 %><br>
-
-    <%= i.label :quantity_2 %>
-    <%= i.text_field :quantity_2 %><br>
+    <%= i.label :quantity%>
+    <%= i.text_field :quantity%><br>
 
     <% end %>
   <%= f.submit %>
