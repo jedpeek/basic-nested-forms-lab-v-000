@@ -8,13 +8,15 @@
   <%= f.fields_for :ingredients do |i| %>
 
   <%= i.label :ingredient_name_1 %>
-<%= i.text_field :street_address_1 %><br>
+  <%= i.text_field :ingredient_name_1 %><br>
 
-<%= i.label :street_address_2 %>
-<%= i.text_field :street_address_2 %><br>
+  <%= i.label :city %>
+  <%= i.text_field :city %><br>
 
-<%= i.label :city %>
-<%= i.text_field :city %><br>
+  <%= i.label :street_address_2 %>
+  <%= i.text_field :street_address_2 %><br>
+
+
 
   <% end %>
   <%= f.submit %>
