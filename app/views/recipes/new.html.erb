@@ -1,10 +1,20 @@
 <%= render 'form', recipe: @recipe %>
+
 <%= form_for @person do |f| %>
 
   <%= f.label :title %>
   <%= f.text_field :title %><br>
 
   <%= f.fields_for :ingredients do |i| %>
+
+  <%= i.label :street_address_1 %>
+<%= i.text_field :street_address_1 %><br>
+
+<%= i.label :street_address_2 %>
+<%= i.text_field :street_address_2 %><br>
+
+<%= i.label :city %>
+<%= i.text_field :city %><br>
 
   <% end %>
   <%= f.submit %>
