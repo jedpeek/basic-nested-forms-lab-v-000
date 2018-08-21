@@ -7,7 +7,7 @@
 
   <%= f.fields_for :ingredients do |i| %>
 
-    <%= i.label :ingredient_name_1 %>
+    <%= i.label :ingredient_1 %>
     <%= i.text_field :ingredient_name_1 %><br>
 
     <%= i.label :quantity_1 %>
@@ -18,7 +18,7 @@
 
     <%= i.label :quantity_2 %>
     <%= i.text_field :quantity_2 %><br>
-    
+
     <% end %>
   <%= f.submit %>
 <% end %>
