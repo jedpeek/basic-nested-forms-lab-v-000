@@ -1,5 +1,3 @@
-<%= render 'form', recipe: @recipe %>
-
 <%= form_for @recipe do |f| %>
 
   <%= f.label :title %>
@@ -10,8 +8,8 @@
     <%= i.label :name %>
     <%= i.text_field :name %><br>
 
-    <%= i.label :quantity%>
-    <%= i.text_field :quantity%><br>
+    <%= i.label :quantity %>
+    <%= i.text_field :quantity %><br>
 
     <% end %>
   <%= f.submit %>
